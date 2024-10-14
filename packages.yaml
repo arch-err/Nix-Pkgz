@@ -1,0 +1,192 @@
+#!CMD: ./install.sh
+packages:
+  git:
+    - package: gh
+    - package: git-lfs
+    - package: tea
+
+  networking:
+    - package: netcat-gnu
+    - package: wireshark
+      installedName: wireshark-qt
+    - package: wifite2
+    - package: aircrack-ng
+    - package: airgeddon
+    - package: arp-scan
+    - package: bettercap
+    - package: ettercap
+    - package: tcpdump
+    - package: nmap
+    - package: netdiscover
+    - package: macchanger
+    - package: hcxdumptool
+    - package: hcxtools
+    - package: python312Packages.scapy
+      name: scapy
+      installedName: python3.12-scapy
+    - package: dsniff
+      installedName: dsniff-2.4b1
+    - package: bully
+      installedName: bully-1.4
+    - package: tcpflow
+
+  web:
+    - package: whatweb
+    - package: wpscan
+    - package: wapiti
+    - package: ffuf
+    - package: httrack
+    - package: feroxbuster
+    - package: gobuster
+    - package: nikto
+    - package: dirbuster
+      installedName: dirbuster-1.0-RC1
+    - package: dirb
+    - package: burpsuite
+    - package: caido
+
+  stego:
+    - package: stegsolve
+    - package: steghide
+    - package: stegseek
+    - package: zsteg
+      description: stegoTool
+    - package: binwalk
+
+  forensics:
+    - package: zbar
+    - package: mediainfo
+    - package: mediainfo-gui
+    - package: foremost
+    - package: ghex
+
+  osint:
+    - package: maltego
+
+  crypto:
+    - package: urlencode
+
+  bruteforce:
+    - package: john
+    - package: johnny
+    # - package: hashcat
+    # - package: hashcat-utils
+    - package: hashid
+      installedName: hashid-3.1.4-unstable-2015-03
+    - package: fcrackzip
+    - package: thc-hydra
+    - package: cewl
+    - package: crunch
+
+  exploits:
+    - package: websploit
+    - package: metasploit
+      installedName: metasploit-framework
+    - package: armitage
+      installedName:  armitage-unstable-2022-12
+    - package: powersploit
+      installedName: powersploit-3.0.0-unstable-2020-08
+    - package: exploitdb
+      installedName: exploitdb-2024-08
+    - package: gtfocli
+
+  phishing:
+    - package: gophish
+
+  scanning:
+    - package: snyk
+    - package: trufflehog
+    - package: lynis
+
+  databases:
+    - package: sqlitebrowser
+    - package: sqlmap
+
+  reversing:
+    - package: ghidra-bin
+      installedName: ghidra
+    - package: capstone
+
+  windooze:
+    - package: chntpw
+    - package: dosbox
+      installedName: dosbox-0.74
+    - package: mimikatz
+      installedName: mimikatz-2.2.0
+    - package: powershell
+    - package: wineWowPackages.waylandFull
+      installedName: wine-wow-wayland
+
+  pivoting:
+    - package: chisel
+    - package: sshuttle
+
+  dns:
+    - package: dnsenum
+    - package: dnsutils
+      installedName: bind
+    - package: traceroute
+
+  cloud:
+    - package: kube-hunter
+    - package: kubectl
+    - package: skopeo
+    - package: sops
+    - package: kubernetes-helm
+    - package: k9s
+    - package: kubeseal
+    - package: talosctl
+    - package: minio-client
+      installedName: minio-client-2024-08-26T10-49-58Z
+    - package: fluxctl
+    - package: dive
+    - package: drone-cli
+    - package: drone-oss
+      installedName: drone.io-oss
+    - package: docker-compose
+    - package: argocd
+    - package: age
+    - package: oras
+
+  misc:
+    - package: nfs-utils
+    - package: cadaver
+    - package: updog
+    - package: commix
+    - package: tldr
+    - package: cmatrix
+    - package: bc
+    - package: entr
+    - package: pandoc
+      installedName: pandoc-cli
+    - package: at
+    - package: rpi-imager
+    # - package: intel-ocl
+
+  file-management:
+    - package: tree
+    - package: yazi
+    - package: zoxide
+    - package: bat
+
+  terminal:
+    - package: starship
+
+  development:
+    - package: shc
+    - package: hugo
+    - package: nano
+    - package: jq
+    - package: gcolor3
+    - package: keystore-explorer
+    - package: dos2unix
+
+  media:
+    - package: satty
+    - package: audacity
+    - package: font-manager
+
+  shell:
+    - package: nushell
+    - package: neofetch
+      installedName: neofetch-unstable-2021-12
