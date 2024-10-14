@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+# Description: A way to declaratively manage nix-env installed packages on a non NixOS system
+# Author: arch-err
+# Dependencies:
+#   - yq
+#   - nix-env
+#   - bash
+#   - sed
+#   - grep
+#
+
 ONLY_INSTALL=true
 export NIXPKGS_ALLOW_UNFREE=1
 
@@ -10,7 +20,6 @@ INSTALLED_PKGS=$(nix-env -q | sed "s/-[0-9.]\+$//")
 # echo $INSTALLED_PKGS
 # echo $PKGS
 # echo $DIFFERENT_INSTALLED_NAMES
-# exit 0
 
 
 for PKG in $PKGS
