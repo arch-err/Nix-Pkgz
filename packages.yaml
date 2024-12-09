@@ -29,6 +29,8 @@ packages:
     - package: bully
       installedName: bully-1.4
     - package: tcpflow
+    - package: protonvpn-gui
+    - package: prettyping
 
   web:
     - package: whatweb
@@ -43,7 +45,7 @@ packages:
       installedName: dirbuster-1.0-RC1
     - package: dirb
     - package: burpsuite
-    - package: caido
+    # - package: caido
 
   stego:
     - package: stegsolve
@@ -57,6 +59,8 @@ packages:
     - package: zbar
     - package: mediainfo
     - package: mediainfo-gui
+    - package: exiftool
+      installedName: perl5.38.2-Image-ExifTool
     - package: foremost
     - package: ghex
 
@@ -161,6 +165,7 @@ packages:
       installedName: pandoc-cli
     - package: at
     - package: rpi-imager
+    # - package: taskell
     # - package: intel-ocl
 
   file-management:
@@ -180,13 +185,28 @@ packages:
     - package: gcolor3
     - package: keystore-explorer
     - package: dos2unix
+    - package: php
+      installedName: php-with-extensions
 
   media:
     - package: satty
     - package: audacity
     - package: font-manager
+    - package: mpv
+      installedName: mpv-with-scripts
 
   shell:
     - package: nushell
     - package: neofetch
       installedName: neofetch-unstable-2021-12
+
+  slides:
+    - package: blahaj
+    - package: slides
+    - package: plantuml
+    - package: figlet
+    - package: just
+    - package: boxes
+    - package: graph-easy
+      installedName: perl5.38.2-graph-easy
+    - package: wtype
