@@ -1,14 +1,14 @@
 #!CMD: ./install.sh
 packages:
-  git:
-    - package: gh
-    - package: git-lfs
-    - package: tea
+  # git:
+  #   - package: gh
+  #   - package: git-lfs
+  #   - package: tea
 
   networking:
     - package: netcat-gnu
-    - package: wireshark
-      installedName: wireshark-qt
+    # - package: wireshark
+    #   installedName: wireshark-qt
     - package: wifite2
     - package: aircrack-ng
     - package: airgeddon
@@ -31,6 +31,7 @@ packages:
     - package: tcpflow
     - package: protonvpn-gui
     - package: prettyping
+    - package: bluez
 
   web:
     - package: whatweb
@@ -99,8 +100,8 @@ packages:
 
   scanning:
     - package: snyk
-    - package: trufflehog
-    - package: lynis
+    # - package: trufflehog
+    # - package: lynis
 
   databases:
     - package: sqlitebrowser
@@ -110,6 +111,7 @@ packages:
     - package: ghidra-bin
       installedName: ghidra
     - package: capstone
+    - package: jadx
 
   windooze:
     - package: chntpw
@@ -122,7 +124,7 @@ packages:
       installedName: wine-wow-wayland
 
   pivoting:
-    - package: chisel
+    # - package: chisel
     - package: sshuttle
 
   dns:
@@ -138,8 +140,8 @@ packages:
     - package: sops
     - package: kubernetes-helm
     - package: k9s
-    - package: kubeseal
-    - package: talosctl
+    # - package: kubeseal
+    # - package: talosctl
     - package: minio-client
       installedName: minio-client-2024-08-26T10-49-58Z
     - package: fluxctl
@@ -167,26 +169,41 @@ packages:
     - package: rpi-imager
     # - package: taskell
     # - package: intel-ocl
+    - package: android-tools
+    - package: universal-android-debloater
+    # - package: scrcpy
+    - package: keymapp
+    # - package: bitwarden-desktop
+    - package: firefox
+    - package: zathura
+      installedName: zathura-with-plugins
+    # - package: tmux
+    # - package: <++>
 
   file-management:
-    - package: tree
-    - package: yazi
+    # - package: tree
+    # - package: yazi
     - package: zoxide
-    - package: bat
+    # - package: bat
 
-  terminal:
-    - package: starship
+  # terminal:
+  #   - package: starship
 
   development:
     - package: shc
     - package: hugo
     - package: nano
     - package: jq
+    - package: pup
+      installedName: pup-unstable
     - package: gcolor3
     - package: keystore-explorer
     - package: dos2unix
     - package: php
       installedName: php-with-extensions
+    - package: gomplate
+    - package: bun
+    - package: live-server
 
   media:
     - package: satty
@@ -210,3 +227,16 @@ packages:
     - package: graph-easy
       installedName: perl5.38.2-graph-easy
     - package: wtype
+    - package: chafa
+  work:
+    - package: jira-cli-go
+  nvim:
+    - package: yarn
+    - package: helm-ls
+    - package: nodePackages.prettier
+      installedName: prettier
+    - package: dockerfile-language-server-nodejs
+    - package: tailwindcss-language-server
+    - package: typescript-language-server
+    - package: scripthaus
+    - package: emmet-language-server
